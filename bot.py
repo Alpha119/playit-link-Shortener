@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', '5fd20df0c4db85798dd4f5ff3d03e3606a94f98b')
+API_KEY = environ.get('API_KEY', '16a0e545b8806a0a60f3d2ea1fdeb4ffb339b765')
 
 bot = Client('gplink bot',
              api_id=API_ID,
@@ -33,7 +33,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://playdisk.xyz/api'
+    url = 'https://hypelinks.tk/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
